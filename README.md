@@ -220,10 +220,10 @@ Seluruh aturan style dipisahkan sepenuhnya ke dalam file external style.css dan 
 ```
 
 ## Preview 
-- Tampilan Biasa
+- Tampilan Biasa <br>
   ![Desktop](assets/ViewDesktop.png)
 
-- Tampilan Mobile
+- Tampilan Mobile <br>
   ![Desktop](assets/ViewMobile.png)
   
 Maturnuwun, Terima Kasih, Gracias, Syukron, Arigatou Ozaimasu, Thank you
