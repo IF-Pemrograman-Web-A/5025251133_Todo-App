@@ -7,7 +7,7 @@
 
 **deskripsi**
 
-Project Static Web Page untuk App Todo List, "dicoding" menggunakan HTML dan CSS eksternal
+Project Static Web Page untuk App Todo List, dicoding menggunakan "bahasa" HTML dan CSS eksternal
 
 - Menggunakan elemen semantik HTML (header, main, aside, dan footer).
 - Layout dibagi jadi dua panel (kiri untuk list tugas, kanan untuk detail/form) dengan memanfaatkan Flexbox.
