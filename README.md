@@ -221,6 +221,9 @@ Seluruh aturan style dipisahkan sepenuhnya ke dalam file external style.css dan 
 
 ## Preview 
 - Tampilan Biasa
+  ![Desktop](assets/ViewDesktop.png)
+
 - Tampilan Mobile
+  ![Desktop](assets/ViewMobile.png)
   
 Maturnuwun, Terima Kasih, Gracias, Syukron, Arigatou Ozaimasu, Thank you
