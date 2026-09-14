@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List Garda</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1> ( ͡° ͜ʖ ͡°) - To Do List - ( ͡° ͜ʖ ͡°) </h1>
+  </header>
+
+  <main class="container">
+    
+    <section class="panelLeft">
+      <h2>List Aktivitas</h2>
+
+      <form class="form-todo">
+        <input 
+          type="text" 
+          placeholder="Nama aktivitas..." 
+          required
+        >
+        <textarea 
+          placeholder="Tulis catatan atau detail aktivitas di sini..." 
+          rows="3"
+        ></textarea>
+        <button type="submit">+ Add</button>
+      </form>
+
+      <ul class="list-aktivitas">
+        <li class="item selected">Belajar Competitive Programming Nonstop</li>
+        <li class="item">Mengerjakan tugas pemweb</li>
+        <li class="item">Sholat Magrib Berjamaah</li>
+        <li class="item completed">Menjadi kakak pembimbing OKKBK</li>
+      </ul>
+    </section>
+
+    <aside class="panelRight">
+      <h2>Detail Aktivitas</h2>
+      <div class="isi-detail">
+        <p><strong>Judul:</strong> Belajar Competitive Programming Nonstop</p>
+        <p class="statusParagraph"><strong>Status:</strong> <span class="status-in-progress">In Progress</span></p>
+        <p><strong>Catatan:</strong></p>
+        <div class="kotak-catatan">
+          Dunia hanya berputar untuk COMPETITIVE PROGRAMMING RAHHHHHHHHHHHHHHHH
+          <br>Belajar COMPETITIVE PROGRAMMING supaya cepat menua RAHHHHHHHHHHHHHHHH
+        </div>
+      </div>
+    </aside>
+
+  </main>
+
+  <footer>
+    <p>&copy; Garda Putra Brahmantya | 5025251133 </p>
+  </footer>
+
+</body>
+</html>
