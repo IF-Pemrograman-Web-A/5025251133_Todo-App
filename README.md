@@ -222,5 +222,5 @@ Seluruh aturan style dipisahkan sepenuhnya ke dalam file external style.css dan 
 ## Preview 
 - Tampilan Biasa
 - Tampilan Mobile
-- 
+  
 Maturnuwun, Terima Kasih, Gracias, Syukron, Arigatou Ozaimasu, Thank you
