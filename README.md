@@ -318,3 +318,6 @@ Proyek terdiri dari tiga berkas utama yang terpisah secara sendiri-sendiri yakni
   ![SwitchTheme](assets/AddActivity.gif)
 - **Demo Checkbox and Remove Activity**  
   ![SwitchTheme](assets/Checkbox_and_Remove.gif)
+
+## Link Deploy
+https://if-pemrograman-web-a.github.io/5025251133_Todo-App/
