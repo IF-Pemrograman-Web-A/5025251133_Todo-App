@@ -306,4 +306,4 @@ Proyek terdiri dari tiga berkas utama yang terpisah secara sendiri-sendiri yakni
   ![Desktop Dark Mode](assets/ViewDesktopDark.png)
 
 - **Tampilan Mobile**  
-  ![Mobile View](assets/ViewMobile.png)
+  ![Mobile View](assets/ViewMobile_.png)
