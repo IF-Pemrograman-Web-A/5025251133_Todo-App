@@ -315,4 +315,4 @@ Proyek terdiri dari tiga berkas utama yang terpisah secara sendiri-sendiri yakni
   ![SwitchTheme](assets/ThemeSelect.gif)
 
 - **Demo Set Activity**  
-  ![SwitchTheme](assets/SetActivity.gif)
+  ![SwitchTheme](assets/AddActivity.gif)
