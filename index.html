@@ -9,7 +9,10 @@
 <body>
 
   <header>
-    <h1> ( ͡° ͜ʖ ͡°) - To Do List - ( ͡° ͜ʖ ͡°) </h1>
+    <div class="header-content">
+      <h1> ( ͡° ͜ʖ ͡°) - To Do List - ( ͡° ͜ʖ ͡°) </h1>
+      <button id="themeToggleBtn" type="button" class="btn-theme">To Dark Mode</button>
+    </div>
   </header>
 
   <main class="container">
@@ -17,38 +20,59 @@
     <section class="panelLeft">
       <h2>List Aktivitas</h2>
 
-      <form class="form-todo">
+      <form id="todoForm" class="form-todo">
         <input 
           type="text" 
+          id="todoInputTitle" 
           placeholder="Nama aktivitas..." 
           required
         >
         <textarea 
+          id="todoInputDesc" 
           placeholder="Tulis catatan atau detail aktivitas di sini..." 
           rows="3"
         ></textarea>
         <button type="submit">+ Add</button>
       </form>
 
-      <ul class="list-aktivitas">
-        <li class="item selected">Belajar Competitive Programming Nonstop</li>
-        <li class="item">Mengerjakan tugas pemweb</li>
-        <li class="item">Sholat Magrib Berjamaah</li>
-        <li class="item completed">Menjadi kakak pembimbing OKKBK</li>
+      <ul id="todoList" class="list-aktivitas">
       </ul>
     </section>
 
     <aside class="panelRight">
       <h2>Detail Aktivitas</h2>
-      <div class="isi-detail">
-        <p><strong>Judul:</strong> Belajar Competitive Programming Nonstop</p>
-        <p class="statusParagraph"><strong>Status:</strong> <span class="status-in-progress">In Progress</span></p>
+
+      <div id="viewMode" class="isi-detail">
+        <p><strong>Judul:</strong> <span id="detailTitle">-</span></p>
+        <p class="statusParagraph"><strong>Status:</strong> <span id="detailStatus">-</span></p>
         <p><strong>Catatan:</strong></p>
-        <div class="kotak-catatan">
-          Dunia hanya berputar untuk COMPETITIVE PROGRAMMING RAHHHHHHHHHHHHHHHH
-          <br>Belajar COMPETITIVE PROGRAMMING supaya cepat menua RAHHHHHHHHHHHHHHHH
-        </div>
+        <div id="detailDesc" class="kotak-catatan">-</div>
       </div>
+
+      <form id="editForm" class="form-edit" style="display: none;">
+        <div class="edit-group">
+          <label for="editTitle"><strong>Judul:</strong></label>
+          <input type="text" id="editTitle" required>
+        </div>
+
+        <div class="edit-group">
+          <label for="editStatus"><strong>Status:</strong></label>
+          <select id="editStatus">
+            <option value="false">In Progress</option>
+            <option value="true">Completed</option>
+          </select>
+        </div>
+
+        <div class="edit-group">
+          <label for="editDesc"><strong>Catatan:</strong></label>
+          <textarea id="editDesc" rows="4"></textarea>
+        </div>
+
+        <div class="edit-actions">
+          <button type="submit" class="btn-save">Simpan Perubahan</button>
+          <button type="button" id="btnCancelEdit" class="btn-cancel">Batal</button>
+        </div>
+      </form>
     </aside>
 
   </main>
@@ -57,5 +81,6 @@
     <p>&copy; Garda Putra Brahmantya | 5025251133 </p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
