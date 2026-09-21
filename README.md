@@ -312,7 +312,7 @@ Proyek terdiri dari tiga berkas utama yang terpisah secara sendiri-sendiri yakni
   ![Mobile View Dark](assets/ViewMobileDark.png)
   
 - **Demo Switch Theme**  
-  ![SwitchTheme](assets/ThemeSwitch.gif)
+  ![SwitchTheme](assets/ThemeSelect.gif)
 
 - **Demo Set Activity**  
   ![SwitchTheme](assets/SetActivity.gif)
