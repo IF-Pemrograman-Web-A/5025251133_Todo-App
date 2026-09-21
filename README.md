@@ -305,5 +305,14 @@ Proyek terdiri dari tiga berkas utama yang terpisah secara sendiri-sendiri yakni
 - **Tampilan Desktop (Dark Mode)**  
   ![Desktop Dark Mode](assets/ViewDesktopDark.png)
 
-- **Tampilan Mobile**  
-  ![Mobile View](assets/ViewMobile_.png)
+- **Tampilan Mobile (Light Mode)**  
+  ![Mobile View Light](assets/ViewMobile.png)
+
+- **Tampilan Mobile (Dark Mode)**  
+  ![Mobile View Dark](assets/ViewMobileDark.png)
+  
+- **Demo Switch Theme**  
+  ![SwitchTheme](assets/ThemeSwitch.gif)
+
+- **Demo Set Activity**  
+  ![SwitchTheme](assets/SetActivity.gif)
