@@ -316,3 +316,5 @@ Proyek terdiri dari tiga berkas utama yang terpisah secara sendiri-sendiri yakni
 
 - **Demo Set Activity**  
   ![SwitchTheme](assets/AddActivity.gif)
+- **Demo Checkbox and Remove Activity**  
+  ![SwitchTheme](assets/Checkbox_and_Remove.gif)
