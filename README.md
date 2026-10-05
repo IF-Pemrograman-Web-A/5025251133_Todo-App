@@ -572,6 +572,9 @@ self.addEventListener("notificationclick", (event) => {
 
 ---
 
+## Link Deployment
+https://github.com/IF-Pemrograman-Web-A/5025251133_Todo-App/settings/pages
+
 ## Preview Tampilan
 
 - **Theme Preference yang Tersimpan**: ![SavedThemes](https://github.com/IF-Pemrograman-Web-A/5025251133_Todo-App/blob/E03/assets/SavedThemePreference.gif)
