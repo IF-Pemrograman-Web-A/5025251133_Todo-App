@@ -3,59 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To Do List Garda</title>
+  <title>To Do List - Accessible Web App</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1> ( ͡° ͜ʖ ͡°) - To Do List - ( ͡° ͜ʖ ͡°) </h1>
+  <header role="banner">
+    <div class="header-content">
+      <h1 id="appTitle">( ͡° ͜ʖ ͡°) - To Do List - ( ͡° ͜ʖ ͡°)</h1>
+      <button 
+        id="themeToggleBtn" 
+        type="button" 
+        class="btn-theme" 
+        aria-pressed="false"
+        aria-label="Beralih ke Mode Gelap"
+      >
+        To Dark Mode
+      </button>
+    </div>
   </header>
 
-  <main class="container">
+  <main class="container" role="main">
     
-    <section class="panelLeft">
-      <h2>List Aktivitas</h2>
+    <section class="panelLeft" aria-labelledby="headingList">
+      <h2 id="headingList">List Aktivitas</h2>
 
-      <form class="form-todo">
-        <input 
-          type="text" 
-          placeholder="Nama aktivitas..." 
-          required
-        >
-        <textarea 
-          placeholder="Tulis catatan atau detail aktivitas di sini..." 
-          rows="3"
-        ></textarea>
-        <button type="submit">+ Add</button>
+      <form id="todoForm" class="form-todo" aria-label="Form Tambah Aktivitas Baru">
+        <div class="form-group">
+          <label for="todoInputTitle">Nama Aktivitas <span class="required">*</span></label>
+          <input 
+            type="text" 
+            id="todoInputTitle" 
+            placeholder="Nama aktivitas..." 
+            required
+            aria-required="true"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="todoInputDesc">Catatan Detail</label>
+          <textarea 
+            id="todoInputDesc" 
+            placeholder="Tulis catatan atau detail aktivitas di sini..." 
+            rows="3"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="todoInputNotify">Waktu Pengingat Notifikasi</label>
+          <input 
+            type="datetime-local" 
+            id="todoInputNotify"
+            aria-describedby="notifyHelp"
+          >
+          <small id="notifyHelp" class="help-text">Pilih waktu untuk menerima notifikasi pengingat.</small>
+        </div>
+
+        <fieldset class="camera-section">
+          <legend>Lampiran Foto Aktivitas</legend>
+          
+          <div class="camera-preview-wrapper">
+            <video id="cameraVideo" autoplay playsinline hidden aria-label="Prinjauan Kamera Langsung"></video>
+            <canvas id="cameraCanvas" hidden></canvas>
+            <img id="capturedImagePreview" alt="Prinjauan Foto Terlampir" hidden>
+          </div>
+
+          <div class="camera-controls">
+            <button type="button" id="btnStartCamera" class="btn-secondary">Buka Kamera</button>
+            <button type="button" id="btnCapture" class="btn-action btn-edit" hidden>Ambil Foto</button>
+            <button type="button" id="btnClearImage" class="btn-action btn-delete" hidden>Hapus Foto</button>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn-submit">+ Add Aktivitas</button>
       </form>
 
-      <ul class="list-aktivitas">
-        <li class="item selected">Belajar Competitive Programming Nonstop</li>
-        <li class="item">Mengerjakan tugas pemweb</li>
-        <li class="item">Sholat Magrib Berjamaah</li>
-        <li class="item completed">Menjadi kakak pembimbing OKKBK</li>
-      </ul>
+      <div id="srAnnouncement" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+      <ul id="todoList" class="list-aktivitas" aria-label="Daftar Tugas Aktivitas" role="list"></ul>
     </section>
 
-    <aside class="panelRight">
-      <h2>Detail Aktivitas</h2>
-      <div class="isi-detail">
-        <p><strong>Judul:</strong> Belajar Competitive Programming Nonstop</p>
-        <p class="statusParagraph"><strong>Status:</strong> <span class="status-in-progress">In Progress</span></p>
+    <aside class="panelRight" aria-labelledby="headingDetail">
+      <h2 id="headingDetail">Detail Aktivitas</h2>
+
+      <div id="viewMode" class="isi-detail" aria-live="polite">
+        <p><strong>Judul:</strong> <span id="detailTitle">-</span></p>
+        <p class="statusParagraph"><strong>Status:</strong> <span id="detailStatus" role="status">-</span></p>
+        <p><strong>Pengingat:</strong> <span id="detailNotify">-</span></p>
         <p><strong>Catatan:</strong></p>
-        <div class="kotak-catatan">
-          Dunia hanya berputar untuk COMPETITIVE PROGRAMMING RAHHHHHHHHHHHHHHHH
-          <br>Belajar COMPETITIVE PROGRAMMING supaya cepat menua RAHHHHHHHHHHHHHHHH
+        <div id="detailDesc" class="kotak-catatan">-</div>
+        
+        <div id="detailImageWrapper" class="detail-image-container">
+          <p><strong>Lampiran Gambar:</strong></p>
+          <img id="detailImage" src="" alt="Lampiran Foto Aktivitas" hidden>
+          <p id="noImageText" class="text-muted">Tidak ada gambar terlampir.</p>
         </div>
       </div>
+
+      <form id="editForm" class="form-edit" style="display: none;" aria-label="Form Edit Aktivitas">
+        <div class="edit-group">
+          <label for="editTitle"><strong>Judul Aktivitas:</strong></label>
+          <input type="text" id="editTitle" required aria-required="true">
+        </div>
+
+        <div class="edit-group">
+          <label for="editStatus"><strong>Status Penyelesaian:</strong></label>
+          <select id="editStatus">
+            <option value="false">In Progress</option>
+            <option value="true">Completed</option>
+          </select>
+        </div>
+
+        <div class="edit-group">
+          <label for="editNotify"><strong>Waktu Pengingat:</strong></label>
+          <input type="datetime-local" id="editNotify">
+        </div>
+
+        <div class="edit-group">
+          <label for="editDesc"><strong>Catatan:</strong></label>
+          <textarea id="editDesc" rows="4"></textarea>
+        </div>
+
+        <div class="edit-actions">
+          <button type="submit" class="btn-save">Simpan Perubahan</button>
+          <button type="button" id="btnCancelEdit" class="btn-cancel">Batal</button>
+        </div>
+      </form>
     </aside>
 
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     <p>&copy; Garda Putra Brahmantya | 5025251133 </p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
