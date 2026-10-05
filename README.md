@@ -575,5 +575,5 @@ self.addEventListener("notificationclick", (event) => {
 
 ## Preview Tampilan
 
-- **Theme Preference yang Tersimpan**:
-- **Navigasi Menggunakan Tab dan Enter untuk Press Button**:
+- **Theme Preference yang Tersimpan**: ![SavedThemes](https://github.com/IF-Pemrograman-Web-A/5025251133_Todo-App/blob/E03/assets/SavedThemePreference.gif)
+- **Navigasi Menggunakan Tab dan Enter untuk Press Button**: ![AccessibilityandSavedChanges](https://github.com/IF-Pemrograman-Web-A/5025251133_Todo-App/blob/E03/assets/SavedChanges.gif)
