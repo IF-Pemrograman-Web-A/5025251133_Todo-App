@@ -556,9 +556,8 @@ self.addEventListener("notificationclick", (event) => {
 ├── sw.js
 ├── README.md
 └── assets/
-    ├── ViewDesktop.png
-    ├── ViewDesktopDark.png
-    └── ViewMobile.png
+    ├── SavedThemePreference.gif
+    └── SavedChanges.gif
 ```
 
 ---
