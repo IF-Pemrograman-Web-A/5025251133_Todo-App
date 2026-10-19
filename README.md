@@ -871,6 +871,18 @@ self.addEventListener("fetch", (event) => {
 ---
 
 ##  Preview
+![](assets/ss/01.png)
+![](assets/ss/02.png)
+![](assets/ss/03.png)
+![](assets/ss/04.png)
+![](assets/ss/05.png)
+![](assets/ss/06.png)
+
+![](assets/gif/01-nav-personal-shared.gif)
+![](assets/gif/02-switch-user.gif)
+![](assets/gif/BuktiFile.gif)
+![](assets/gif/bukaKamera.gif)
+
 ---
 
 ##  Tech Stack
