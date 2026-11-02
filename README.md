@@ -219,29 +219,30 @@ Style sheet utama aplikasi yang mencakup layout responsive Flexbox, variabel tem
 
 ---
 
-## 📱 Dokumentasi & Bukti PWA [E05]
+## 📱 Dokumentasi [E05]
 
 Pengujian fitur Progressive Web App [E05] dilakukan menggunakan **Chrome DevTools** pada *tab Application & Network* untuk membuktikan pemenuhan tugas nomor 1 sampai 5.
 
 ### 1. Web App Manifest (`manifest.json`)
 Web App Manifest terdeteksi tanpa error. Seluruh properti identitas aplikasi, warna tema, ikon (192px, 512px, maskable), dan *screenshots* Richer UI terkonfigurasi dengan tepat.
-![Bukti Web App Manifest](assets/screenshots/proof-manifest.png)
+![Bukti Web App Manifest](assets_/proof_manifest1.png)
+![Bukti Web App Manifest](assets_/proof_manifest2.png)
 
 ### 2. Service Worker Active (`sw.js`)
 Service Worker terdaftar pada *scope* aplikasi dan berstatus hijau **`Activated and is running`**.
-![Bukti Service Worker Active](assets/screenshots/proof-sw.png)
+![Bukti Service Worker Active](assets_/proof_sw.png)
 
 ### 3. Cache Storage (Precache App Shell)
 Seluruh berkas utama *App Shell* (`index.php`, `offline.html`, `manifest.json`, `style.css`, `script.js`, dan ikon) berhasil tersimpan di dalam Cache Storage (`todo-app-php-v3`).
-![Bukti Cache Storage](assets/screenshots/proof-cache.png)
+![Bukti Cache Storage](assets_/proof_cache.png)
 
 ### 4. Tombol Install PWA & Prompt Installation
 Tombol **📲 Install App** pada header aplikasi aktif melalui event `beforeinstallprompt` dan berhasil memicu jendela instalasi PWA native browser saat diklik.
-![Bukti Install PWA Button & Prompt](assets/screenshots/proof-install.png)
+![Bukti Install PWA Button & Prompt](assets_/install_app.gif)
 
 ### 5. Pengujian Offline Mode (Network Off Test)
 Saat jaringan disimulasikan **Offline** melalui tab DevTools Network, aplikasi tetap dapat diakses dengan lancar dari *Cache Storage*, serta menampilkan halaman fallback `offline.html` saat navigasi dilakukan tanpa sinyal.
-![Bukti Pengujian Offline Mode](assets/screenshots/proof-offline.png)
+![Bukti Pengujian Offline Mode](assets_/offline.gif)
 
 ---
 
