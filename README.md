@@ -43,9 +43,7 @@ Versi final = **PHP + MySQL + PWA** — mengombinasikan CRUD server-side, sessio
 6. [Dokumentasi & Bukti PWA [E05]](#-dokumentasi--bukti-pwa-e05)
 7. [Perbandingan Perkembangan Proyek](#-perbandingan-perkembangan-proyek)
 8. [Aksesibilitas](#-aksesibilitas)
-9. [Preview & Demo (WAJIB)](#-preview--demo-wajib)
-10. [Checklist Sebelum Submit](#-checklist-sebelum-submit)
-11. [Link Deployment & Tech Stack](#-link-deployment--tech-stack)
+9. [Link Deployment & Tech Stack](#-link-deployment--tech-stack)
 
 ---
 
@@ -272,25 +270,6 @@ Saat jaringan disimulasikan **Offline** melalui tab DevTools Network, aplikasi t
 | Indikator Status | `role="status"` pada badge In Progress / Completed |
 | Interactive Buttons | `aria-pressed` & `aria-label` dinamis pada tombol Dark Mode & Install |
 | Focus Indicator | Outline tegas `:focus-visible { outline: 3px solid #3182ce; }` |
-
----
-
-## 🎬 Preview & Demo (WAJIB)
-
-### 🖼️ A. Tangkapan Layar Statis (PNG)
-
-| # | File Berkas | Deskripsi Tampilan | Fitur Terkait |
-|---|-------------|--------------------|---------------|
-| 1 | `assets/01-project-structure.png` | Struktur folder proyek di VS Code | Arsitektur PHP & PWA |
-| 2 | `assets/02-data-sql.png` | Isi berkas `data.sql` (DDL & DML) | MySQL Database Schema |
-| 3 | `assets/03-phpmyadmin-structure.png` | Struktur tabel `todos` di phpMyAdmin | Database Relation |
-| 4 | `assets/04-pwa-manifest.png` | Panel DevTools Manifest terdeteksi hijau | PWA Manifest (E05 #1) |
-| 5 | `assets/05-pwa-serviceworker.png` | Status Service Worker Activated & Running | Service Worker (E05 #2) |
-| 6 | `assets/06-pwa-cache-storage.png` | Daftar aset App Shell di Cache Storage | Cache Strategy (E05 #3) |
-| 7 | `assets/07-pwa-install-prompt.png` | Jendela prompt instalasi PWA aktif | Install Button (E05 #4) |
-| 8 | `assets/08-pwa-offline-test.png` | Halaman dimuat sukses dalam kondisi Network Off | Offline Test (E05 #5) |
-| 9 | `assets/09-desktop-dark.png` | Tampilan Desktop Dark Mode halaman Personal | UI & Accessibility |
-| 10 | `assets/10-mobile-view.png` | Responsive view 375px mobile mode | Responsive Layout |
 
 ---
 
